@@ -53,7 +53,7 @@ body {
   z-index: -5;
 }
 
-.image-right {
+.section__side-image {
   position: absolute;
   right: 88px;
   top: 83px;
@@ -70,7 +70,7 @@ body {
 }
 
 .header__background {
-  background: url(../img/sideright.png) left bottom no-repeat;
+  background: url(../img/sideleft.png) left bottom no-repeat;
   height: 950px;
   position: absolute;
   width: 100%;
@@ -88,6 +88,10 @@ body {
 .header__logo {
   height: 40px;
   float: left;
+}
+
+.header__burger-menu {
+  display: none;
 }
 
 .header__menu {
@@ -152,7 +156,7 @@ body {
 }
 
 .advantages {
-  background: url(../img/sideleft.png) right 190px top no-repeat;
+  background: url(../img/sideright.png) right 190px top no-repeat;
   height: 1220px;
   position: relative;
 }
@@ -254,6 +258,7 @@ body {
 
 .feature__palette-color {
   border-radius: 50%;
+  cursor: pointer;
   float: left;
   height: 20px;
   margin: 17px;
@@ -329,7 +334,7 @@ body {
 }
 
 .modes {
-  background: url(../img/sideright.png) left top 30px no-repeat;
+  background: url(../img/sideleft.png) left top 30px no-repeat;
   height: 1000px;
   position: relative;
 }
@@ -345,10 +350,9 @@ body {
 }
 
 .footer {
-  background: url(../img/sideright.png) no-repeat;
+  background: url(../img/footerside.jpg) no-repeat;
   background-color: #3a2ff8;
   color: #fff;
-  height: 810px;
   position: relative;
 }
 
@@ -382,4 +386,44 @@ body {
   padding: 15px 46px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.footer__bottom {
+  background-color: #292929;
+  color: #605f5f;
+  font-size: 14px;
+  margin-top: 220px;
+  padding: 5px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+  .video__poster {
+    width: 580px;
+  }
+  .header {
+    height: auto;
+  }
+  .header__background {
+    background-position-y: 50px;
+    background-size: 390px;
+    height: 740px;
+  }
+  .header__nav {
+    padding: 25px 0;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__burger-menu {
+    display: inline-block;
+    width: 60px;
+  }
+  .header__title {
+    font-size: 60px;
+  }
+  .section__side-image {
+    height: 620px;
+    right: 20px;
+  }
 }
