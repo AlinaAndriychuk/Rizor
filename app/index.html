@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="img/icon-donut.png" type="image/png">
   <link href="//db.onlinewebfonts.com/c/1ff190f6a58a00ebfaa0a4b0f955a027?family=Rubik+Mono+One" rel="stylesheet" type="text/css"/>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <title>Rizor</title>
   <script src = "js/libs.min.js"></script>
@@ -52,16 +53,17 @@
   </header>
   <section class="advantages">
     <div class="advantages__video">
-      <img class="advantages__video-play" src="img/play.png" alt="Смотреть видео">
       <img class="advantages__video-play-round" src="img/whiteround.png" alt="">
+      <img class="advantages__video-play" src="img/smallplay.png" alt="Смотреть видео">
+      <img class="advantages__video-poster" src="img/video.jpg" alt="Смотреть видео">
     </div>
     <img class="image-right" src="img/bluearrowdowntwo.png" alt="">
     <div class="container">
       <div class="advantages__flex-container">
-        <h4 class="section__title">
-          Преимущества
-        </h4>
         <div class="feature">
+          <h4 class="section-title">
+            Преимущества
+          </h4>
           <h3 class="feature__title">
             Дизайн
           </h3>
@@ -80,7 +82,7 @@
             </li>
           </ul>
         </div>
-        <div class="feature">
+        <div class="feature feature--margin">
           <img class="feature__arrow" src="img/arrowdown.png" alt="">
           <h3 class="feature__title">
             Цвет
@@ -89,13 +91,13 @@
             Модель представлена сразу в нескольких цветах.
           </p>
           <div class="feature__palette">
-            <div class="feature__palette-color"></div>
-            <div class="feature__palette-color"></div>
-            <div class="feature__palette-color"></div>
-            <div class="feature__palette-color"></div>
-            <div class="feature__palette-color"></div>
+            <div class="feature__palette-color feature__palette-color--yellow"></div>
+            <div class="feature__palette-color feature__palette-color--blue"></div>
+            <div class="feature__palette-color feature__palette-color--red"></div>
+            <div class="feature__palette-color feature__palette-color--gray"></div>
+            <div class="feature__palette-color feature__palette-color--black"></div>
+            <img class="feature__small-arrow" src="img/smallarrowdown.png" alt="">
           </div>
-          <img class="feature__small-arrow" src="img/smallarrowdown.png" alt="">
           <img class="feature__image" src="img/rizor.png" alt="">
         </div>
       </div>
@@ -113,13 +115,13 @@
       <img class="video__poster" src="img/modes.jpg" alt="">
     </div>
     <div class="container">
-      <div class="feature">
+      <div class="feature feature--wide">
         <h3 class="feature__title">
           Режимы
         </h3>
         <p class="feature__text">
           Помимо «умной» подсветки, 
-          <b class="text-bold">hovertrax 4.0</b>
+          <b class="text-bold">Hovertrax 4.0</b>
           снабжён двумя скоростными режимами.
         </p>
         <ul class="feature__list">
@@ -130,11 +132,11 @@
             Второй для новичков
           </li>
         </ul>
-        <div class="feature__indicators">
+        <div class="feature__indicators feature__indicators--margin">
           <h2 class="feature__number">
             13<small class="feature__number-small">км/ч</small>
           </h2>
-          <p class="feature__indicator-description">
+          <p class="feature__indicator-description feature__indicator-description--padding">
             Максимальная скорость
           </p>
         </div>
@@ -152,7 +154,7 @@
   <footer class="footer">
     <img class="footer__image" src="img/footer.jpg" alt="">
     <div class="container">
-      <h4 class="section__title">
+      <h4 class="section-title">
         Для кого
       </h4>
       <p class="footer__text">
