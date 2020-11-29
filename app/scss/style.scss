@@ -102,7 +102,7 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    width: 510px;
+    width: 495px;
   }
 
   &__item {
@@ -136,12 +136,12 @@ body {
     font-size: 80px;
     letter-spacing: 6px;
     margin-bottom: 20px;
-    margin-top: 175px;
+    margin: 178px 0 12px;
     width: 660px;
   }
 
   &__title--nospacing {
-    letter-spacing: -10px;
+    letter-spacing: -12px;
   }
 
   &__text {
@@ -162,7 +162,7 @@ body {
 
 .advantages {
   background: url(../img/sideleft.png) right 190px top no-repeat;
-  height: 1200px;
+  height: 1220px;
   position: relative;
 
   &__video {
@@ -200,7 +200,7 @@ body {
 
   .section-title {
     color: $blue;
-    margin-top: 0;
+    margin-top: -12px;
   }
 
 }
@@ -208,7 +208,7 @@ body {
 .section-title {
   font-size: 20px;
   letter-spacing: 1.4px;
-  margin-bottom: 84px;
+  margin-bottom: 80px;
   text-transform: uppercase;
 }
 
@@ -222,7 +222,7 @@ body {
     font-family: "Rubik Mono One", sans-serif;
     font-size: 40px;
     letter-spacing: 3px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   &__text {
@@ -237,7 +237,7 @@ body {
   &__item {
     line-height: 30px;
     list-style-image: url(../img/list.png);
-    padding: 11px 0 11px 5px;
+    padding: 8px 0 8px 5px;
   }
 
   &__arrow {
@@ -338,13 +338,13 @@ body {
 }
 
 .feature--margin {
-  margin-top: 310px;
+  margin-top: 315px;
   margin-left: 130px;
 }
 
 .modes {
   background: url(../img/sideright.png) left top 30px no-repeat;
-  height: 1035px;
+  height: 1000px;
   position: relative;
 
   .video__controls {
@@ -355,6 +355,47 @@ body {
   .video__arrow {
     top: 98px;
     left: -48px;
+  }
+
+}
+
+.footer {
+  background: url(../img/sideright.png) no-repeat;
+  background-color: #3a2ff8;
+  color: #fff;
+  height: 810px;
+  position: relative;
+
+  &__image {
+    box-shadow: 2px 2px 2px ;
+    position: absolute;
+    right: 0;
+    top: -60px;
+  }
+
+  .section-title {
+    padding-top: 92px;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    width: 340px;
+  }
+
+  &__link {
+    color: $blue;
+    display: inline-block;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    padding: 15px 46px;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 
 }
