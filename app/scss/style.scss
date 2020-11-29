@@ -18,13 +18,51 @@ body {
 }
 
 .video {
-  margin-top: 300px;
   position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: -5;
+
+  &__controls {
+    float: left;
+    top: 75px;
+    left: 64px;
+    position: relative;
+  }
+
+  &__text {
+    float: left;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 14px;
+    margin-top: 21px;
+    text-transform: uppercase;
+    transform: rotateZ(-90deg);
+    width: 74px;
+  }
+
+  &__arrow {
+    top: 78px;
+    left: 7px;
+    position: absolute;
+  }
+
+  &__play {
+    left: -24px;
+    position: relative;
+  }
+
+  &__poster {
+    z-index: -5;
+  }
+
 }
 
 .image-right {
   position: absolute;
-  right: 0;
+  right: 88px;
+  top: 83px;
 }
 
 .clearfix {
@@ -34,6 +72,15 @@ body {
 }
 
 .header {
+  height: 950px;
+
+  &__background {
+    background: url(../img/sideright.png) left bottom no-repeat;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+  }
 
   &__nav {
     align-items: center;
@@ -84,8 +131,36 @@ body {
 
   &__title {
     font-family: "Rubik Mono One", sans-serif;
-    font-size: 100px;
-    margin-top: 200px;
+    font-size: 80px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+    margin-top: 175px;
+    width: 660px;
   }
 
+  &__title--nospacing {
+    letter-spacing: -10px;
+  }
+
+  &__text {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    margin: 0;
+    text-transform: uppercase;
+    width: 330px;
+  }
+
+  &__title-arrow {
+    margin: 35px 31px;
+  }
+
+}
+
+.advantages {
+  position: relative;
+}
+
+.modes {
+  position: relative;
 }

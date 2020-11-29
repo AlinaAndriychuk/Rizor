@@ -13,19 +13,68 @@ body {
 }
 
 .video {
-  margin-top: 300px;
   position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: -5;
+}
+
+.video__controls {
+  float: left;
+  top: 75px;
+  left: 64px;
+  position: relative;
+}
+
+.video__text {
+  float: left;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  margin-top: 21px;
+  text-transform: uppercase;
+  transform: rotateZ(-90deg);
+  width: 74px;
+}
+
+.video__arrow {
+  top: 78px;
+  left: 7px;
+  position: absolute;
+}
+
+.video__play {
+  left: -24px;
+  position: relative;
+}
+
+.video__poster {
+  z-index: -5;
 }
 
 .image-right {
   position: absolute;
-  right: 0;
+  right: 88px;
+  top: 83px;
 }
 
 .clearfix {
   clear: both;
   content: '';
   display: table;
+}
+
+.header {
+  height: 950px;
+}
+
+.header__background {
+  background: url(../img/sideright.png) left bottom no-repeat;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
 }
 
 .header__nav {
@@ -77,6 +126,34 @@ body {
 
 .header__title {
   font-family: "Rubik Mono One", sans-serif;
-  font-size: 100px;
-  margin-top: 200px;
+  font-size: 80px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  margin-top: 175px;
+  width: 660px;
+}
+
+.header__title--nospacing {
+  letter-spacing: -10px;
+}
+
+.header__text {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  margin: 0;
+  text-transform: uppercase;
+  width: 330px;
+}
+
+.header__title-arrow {
+  margin: 35px 31px;
+}
+
+.advantages {
+  position: relative;
+}
+
+.modes {
+  position: relative;
 }
