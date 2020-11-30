@@ -452,6 +452,7 @@ body {
     height: 740px;
   }
   .header__nav {
+    background-color: #fff;
     padding: 25px 0;
   }
   .header__menu {
@@ -461,12 +462,38 @@ body {
     display: inline-block;
     width: 60px;
   }
+  .header__item {
+    float: none;
+    margin: 60px 0;
+  }
+  .header__item:first-child {
+    margin-top: 25px;
+  }
+  .header__link-item {
+    padding: 20px;
+  }
+  .header__link-item--underline::before {
+    left: 11px;
+    top: 19px;
+  }
   .header__title {
     font-size: 60px;
+  }
+  .open-menu {
+    background-color: #fff;
+    display: block;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 75px;
+    width: 100%;
   }
   .section__side-image {
     height: 620px;
     right: 20px;
+  }
+  .section__background {
+    background-position-y: 100px;
   }
   .video__poster {
     width: 580px;
