@@ -1,3 +1,3 @@
 # Rizor
 
-[Link](https://alinaandriychuk.github.io/Rizor)
+[Link](https://alinaandriychuk.github.io/Rizor/app)
