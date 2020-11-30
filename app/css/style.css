@@ -85,7 +85,7 @@ body {
   text-transform: uppercase;
 }
 
-.header__link-item--underline::before {
+.header__menu .header__link-item--underline::before {
   border-bottom: solid #3a30f8 1px;
   content: '';
   height: 20px;
@@ -93,6 +93,21 @@ body {
   position: absolute;
   top: 4px;
   width: 20px;
+}
+
+.header__link-item::before {
+  border-bottom: solid #3a30f8 1px;
+  content: '';
+  height: 20px;
+  left: -4px;
+  position: absolute;
+  top: 4px;
+  transition-duration: 0.5s;
+  width: 0;
+}
+
+.header__link-item:hover::before {
+  width: 105%;
 }
 
 .header__title {
@@ -104,7 +119,7 @@ body {
   width: 660px;
 }
 
-.header__title--nospacing {
+.header__title-nospacing {
   letter-spacing: -12px;
 }
 
@@ -131,9 +146,10 @@ body {
 
 .video__controls {
   float: left;
-  top: 75px;
   left: 64px;
+  opacity: 0;
   position: relative;
+  top: 75px;
 }
 
 .video__text {
@@ -157,6 +173,7 @@ body {
 .video__play {
   left: -24px;
   position: relative;
+  z-index: 5;
 }
 
 .video__poster {
@@ -165,12 +182,13 @@ body {
 
 .advantages {
   background: url(../img/sideright.png) right 190px top no-repeat;
-  height: 1220px;
+  height: 1230px;
   position: relative;
 }
 
 .advantages__video {
   float: left;
+  left: -745px;
   margin-top: 100px;
   max-width: 745px;
   position: relative;
@@ -472,9 +490,16 @@ body {
   .header__link-item {
     padding: 20px;
   }
-  .header__link-item--underline::before {
+  .header__menu .header__link-item--small:hover::before {
+    width: 79%;
+  }
+  .header__link-item::before,
+  .header__menu .header__link-item--underline::before {
     left: 11px;
     top: 19px;
+  }
+  .header__link-item:hover::before {
+    width: 87%;
   }
   .header__title {
     font-size: 60px;
@@ -637,7 +662,7 @@ body {
     font-size: 34px;
     letter-spacing: 1px;
   }
-  .header__title--nospacing {
+  .header__title-nospacing {
     letter-spacing: -8px;
   }
   .header__text {
@@ -699,6 +724,9 @@ body {
   }
   .modes .video__arrow {
     display: none;
+  }
+  .footer .section-title {
+    padding-top: 0;
   }
   .footer__content {
     max-width: 340px;
