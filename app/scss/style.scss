@@ -619,7 +619,7 @@ body {
 @media screen and (max-width: 750px) {
 
   .header {
-    height: 1000px;
+    height: 1050px;
 
     &__title {
       font-size: 50px;
@@ -630,13 +630,72 @@ body {
   }
 
   .video {
-    top: 500px;
+    top: 600px;
     width: 100%;
 
     &__poster {
       position: absolute;
       right: 0;
-      width: 70%;
+      width: 80%;
+    }
+
+    &__controls {
+      left: 5%;
+      top: 30px;
+    }
+
+  }
+  
+  .advantages {
+    height: 100%;
+
+    &__video {
+      top: 350px;
+
+      &-play,
+      &-play-round {
+        top: 190px;
+      }
+
+    }
+
+    &__flex-container {
+      display: block;
+    }
+
+  }
+
+  .feature {
+    margin: auto;
+  }
+
+  .feature--margin {
+    margin-top: 530px;
+  }
+
+  .modes {
+
+    .video {
+      top: 700px;
+      width: 100%;
+  
+      &__poster {
+        position: absolute;
+        right: 0;
+        width: 80%;
+      }
+  
+      &__controls {
+        left: 5%;
+        top: -100px;
+      }
+
+      &__arrow {
+        left: 4%;
+        top: 0;
+        width: 40px;
+      }
+  
     }
 
   }

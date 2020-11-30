@@ -540,7 +540,7 @@ body {
 
 @media screen and (max-width: 750px) {
   .header {
-    height: 1000px;
+    height: 1050px;
   }
   .header__title {
     font-size: 50px;
@@ -548,12 +548,52 @@ body {
     width: 100%;
   }
   .video {
-    top: 500px;
+    top: 600px;
     width: 100%;
   }
   .video__poster {
     position: absolute;
     right: 0;
-    width: 70%;
+    width: 80%;
+  }
+  .video__controls {
+    left: 5%;
+    top: 30px;
+  }
+  .advantages {
+    height: 100%;
+  }
+  .advantages__video {
+    top: 350px;
+  }
+  .advantages__video-play, .advantages__video-play-round {
+    top: 190px;
+  }
+  .advantages__flex-container {
+    display: block;
+  }
+  .feature {
+    margin: auto;
+  }
+  .feature--margin {
+    margin-top: 530px;
+  }
+  .modes .video {
+    top: 700px;
+    width: 100%;
+  }
+  .modes .video__poster {
+    position: absolute;
+    right: 0;
+    width: 80%;
+  }
+  .modes .video__controls {
+    left: 5%;
+    top: -100px;
+  }
+  .modes .video__arrow {
+    left: 4%;
+    top: 0;
+    width: 40px;
   }
 }
