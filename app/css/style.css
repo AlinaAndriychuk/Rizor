@@ -526,6 +526,7 @@ body {
   }
   .footer {
     padding-top: 45%;
+    background-position: left bottom;
   }
   .footer__image {
     box-shadow: 4px 8px 7px #0000002f;
@@ -599,6 +600,9 @@ body {
 }
 
 @media screen and (max-width: 470px) {
+  .container {
+    padding: 0 5px;
+  }
   .header {
     height: 1000px;
   }
@@ -652,5 +656,31 @@ body {
   }
   .feature__number {
     font-size: 40px;
+  }
+  .feature__number-small {
+    font-size: 18px;
+  }
+  .feature__indicators--margin {
+    margin-right: 23px;
+  }
+  .modes {
+    height: 1100px;
+  }
+  .modes .video__controls {
+    left: -10px;
+    top: -160px;
+  }
+  .modes .video__arrow {
+    display: none;
+  }
+  .footer__content {
+    max-width: 340px;
+    width: 100%;
+  }
+  .footer__text {
+    width: 100%;
+  }
+  .footer__link {
+    text-align: center;
   }
 }

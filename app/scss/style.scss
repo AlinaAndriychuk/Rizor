@@ -600,6 +600,7 @@ body {
 
   .footer {
     padding-top: 45%;
+    background-position: left bottom;
 
     &__image {
       box-shadow: 4px 8px 7px #0000002f;
@@ -704,6 +705,10 @@ body {
 
 @media screen and (max-width: 470px) {
 
+  .container {
+    padding: 0 5px;
+  }
+
   .header {
     height: 1000px;
 
@@ -779,6 +784,49 @@ body {
 
     &__number {
       font-size: 40px;
+    }
+
+    &__number-small {
+      font-size: 18px;
+    }
+
+    &__indicators--margin {
+      margin-right: 23px;
+    }
+
+  }
+
+  .modes {
+    height: 1100px;
+
+    .video {
+
+      &__controls {
+        left: -10px;
+        top: -160px;
+      }
+
+      &__arrow {
+        display: none;
+      }
+
+    }
+
+  }
+
+  .footer {
+
+    &__content {
+      max-width: 340px;
+      width: 100%;
+    }
+
+    &__text {
+      width: 100%;
+    }
+
+    &__link {
+      text-align: center;
     }
 
   }
