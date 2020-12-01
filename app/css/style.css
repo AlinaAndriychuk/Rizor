@@ -110,17 +110,27 @@ body {
   width: 105%;
 }
 
+.header__title-container {
+  margin-top: 178px;
+  width: 670px;
+}
+
 .header__title {
   font-family: "Rubik Mono One", sans-serif;
   font-size: 80px;
   letter-spacing: 6px;
   margin-bottom: 20px;
-  margin: 178px 0 12px;
-  width: 660px;
+  margin: 0;
+  width: 670px;
 }
 
-.header__title-nospacing {
-  letter-spacing: -12px;
+.header__title--bottom {
+  letter-spacing: -10px;
+  margin-bottom: 12px;
+}
+
+.header .letter {
+  display: inline-block;
 }
 
 .header__text {
@@ -595,10 +605,17 @@ body {
   .header {
     height: 1050px;
   }
-  .header__title {
-    font-size: 50px;
+  .header__title-container {
     margin-top: 100px;
     width: 100%;
+  }
+  .header__title {
+    font-size: 50px;
+    letter-spacing: 4px;
+    width: 100%;
+  }
+  .header__title--bottom {
+    letter-spacing: -10px;
   }
   .video {
     top: 600px;
@@ -662,8 +679,8 @@ body {
     font-size: 34px;
     letter-spacing: 1px;
   }
-  .header__title-nospacing {
-    letter-spacing: -8px;
+  .header__title--bottom {
+    letter-spacing: -7px;
   }
   .header__text {
     width: 100%;

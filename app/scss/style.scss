@@ -116,17 +116,27 @@ body {
     width: 105%;
   }
 
+  &__title-container {
+    margin-top: 178px;
+    width: 670px;
+  }
+
   &__title {
     font-family: "Rubik Mono One", sans-serif;
     font-size: 80px;
     letter-spacing: 6px;
     margin-bottom: 20px;
-    margin: 178px 0 12px;
-    width: 660px;
+    margin: 0;
+    width: 670px;
   }
 
-  &__title-nospacing {
-    letter-spacing: -12px;
+  &__title--bottom {
+    letter-spacing: -10px;
+    margin-bottom: 12px;
+  }
+
+  .letter {
+    display: inline-block;
   }
 
   &__text {
@@ -682,10 +692,19 @@ body {
   .header {
     height: 1050px;
 
-    &__title {
-      font-size: 50px;
+    &__title-container {
       margin-top: 100px;
       width: 100%;
+    }
+
+    &__title {
+      font-size: 50px;
+      letter-spacing: 4px;
+      width: 100%;
+    }
+
+    &__title--bottom {
+      letter-spacing: -10px;
     }
 
   }
@@ -777,8 +796,8 @@ body {
       letter-spacing: 1px;
     }
 
-    &__title-nospacing {
-      letter-spacing: -8px;
+    &__title--bottom {
+      letter-spacing: -7px;
     }
 
     &__text {
