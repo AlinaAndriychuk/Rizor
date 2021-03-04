@@ -9,6 +9,7 @@ $(function() {
     display: 'none',
     onComplete: () => {
       $(".loader").removeClass("loader");
+      $("body").css("overflow-y", "visible")
     }
   })
   gsap.to(".preloader", {
