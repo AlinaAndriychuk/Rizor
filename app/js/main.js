@@ -1,6 +1,21 @@
 "use strict";
 
 $(function() {
+  gsap.to(".preloader", {
+    y: '100%',
+    backgroundColor: '#000000',
+    duration: 1,
+    delay: 1,
+    display: 'none',
+    onComplete: () => {
+      $(".loader").removeClass("loader");
+    }
+  })
+  gsap.to(".preloader", {
+    backgroundColor: '#000000',
+    duration: 1,
+  })
+
   $(".header__burger-menu").on("click", function() {
     $(".header__menu").toggleClass("open-menu");
     $(".header__burger-menu").addClass("hide-menu");
@@ -51,7 +66,6 @@ $(function() {
     duration: 0.5,
     delay: 4,
     opacity: 0,
-    // y: 40,
     repeat: -1,
     yoyo: true,
     stagger: {

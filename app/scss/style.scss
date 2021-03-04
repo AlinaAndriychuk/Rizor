@@ -10,6 +10,68 @@ body {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  overflow: hidden;
+}
+
+.preloader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  animation: 1s infinite linear;;
+
+  &--central {
+    animation-name: rotateCentral;
+    border-bottom-color: #000000;
+  }
+
+  &--left {
+    animation-name: rotateLeft;
+    border-top-color: #000000;
+  }
+
+  &--right {
+    animation-name: rotateRight;
+    border-bottom-color: #000000;
+  }
+}
+
+@keyframes rotateCentral {
+  0% {
+    transform: translate(-50%, -50%) rotateX(70deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateX(70deg) rotateY(0deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotateLeft {
+  0% {
+    transform: translate(-50%, -50%) rotateX(70deg) rotateY(50deg) rotateZ(50deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateX(70deg) rotateY(50deg) rotateZ(410deg);
+  }
+}
+
+@keyframes rotateRight {
+  0% {
+    transform: translate(-50%, -50%) rotateX(-70deg) rotateY(50deg) rotateZ(50deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateX(-70deg) rotateY(50deg) rotateZ(410deg);
+  }
 }
 
 .container {
