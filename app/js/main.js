@@ -47,6 +47,17 @@ $(function() {
     y: 40,
     stagger: {amount: 1}
   });
+  gsap.to(".letter", {
+    duration: 0.5,
+    delay: 4,
+    opacity: 0,
+    // y: 40,
+    repeat: -1,
+    yoyo: true,
+    stagger: {
+      amount: 2
+    }
+  });
 
   gsap.to(".advantages__video", {
     scrollTrigger: {

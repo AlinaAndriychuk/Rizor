@@ -13,12 +13,6 @@ body {
   width: 100%;
 }
 
-.section__side-image {
-  position: absolute;
-  right: 88px;
-  top: 83px;
-}
-
 .section__background {
   background: url(../img/sideleft.png) left bottom no-repeat;
   height: 950px;
@@ -462,9 +456,6 @@ body {
   .feature__indicator-description {
     color: #000;
   }
-  .section__side-image {
-    right: 2%;
-  }
   .footer__bottom {
     margin-top: 120px;
   }
@@ -485,10 +476,6 @@ body {
   }
   .header__title {
     font-size: 60px;
-  }
-  .section__side-image {
-    height: 620px;
-    right: 20px;
   }
   .section__background {
     background-position-y: 100px;
@@ -693,9 +680,6 @@ body {
   }
   .header__text {
     width: 100%;
-  }
-  .section__side-image {
-    right: 5px;
   }
   .video__controls {
     left: -10px;

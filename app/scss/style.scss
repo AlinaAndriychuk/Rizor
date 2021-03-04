@@ -20,12 +20,6 @@ body {
   width: 100%;
 }
 
-.section__side-image {
-  position: absolute;
-  right: 88px;
-  top: 83px;
-}
-
 .section__background {
   background: url(../img/sideleft.png) left bottom no-repeat;
   height: 950px;
@@ -496,10 +490,6 @@ body {
     color: #000;
   }
 
-  .section__side-image {
-    right: 2%;
-  }
-
   .footer__bottom {
     margin-top: 120px;
   }
@@ -526,11 +516,6 @@ body {
       font-size: 60px;
     }
 
-  }
-
-  .section__side-image {
-    height: 620px;
-    right: 20px;
   }
 
   .section__background {
@@ -819,10 +804,6 @@ body {
       width: 100%;
     }
 
-  }
-
-  .section__side-image {
-    right: 5px;
   }
 
   .video {
