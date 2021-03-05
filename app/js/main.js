@@ -1,6 +1,6 @@
 "use strict";
 
-$(function() {
+$(window).on('load', function(){
   gsap.to(".preloader", {
     y: '100%',
     backgroundColor: '#000000',
@@ -19,6 +19,8 @@ $(function() {
     backgroundColor: '#000000',
     duration: 1,
   })
+})
+$(function() {
 
   $(".header__burger-menu").on("click", function() {
     $(".header__menu").toggleClass("open-menu");
